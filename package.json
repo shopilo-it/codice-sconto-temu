@@ -1,0 +1,22 @@
+{
+  "name": "codice-sconto-temu",
+  "version": "1.0.0",
+  "description": "Fetch automat de coduri de reducere Temu de pe shopilo.it",
+  "main": "index.js",
+  "keywords": [
+    "cod-reducere",
+    "cod-reducere-temu",
+    "voucher-temu",
+    "cupon-temu",
+    "reduceri",
+    "shopilo",
+    "cupoane"
+  ],
+  "author": "shopilo-it",
+  "license": "MIT",
+  "homepage": "https://shopilo.it/magazin/temu.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shopilo-it/codice-sconto-temu.git"
+  }
+}
