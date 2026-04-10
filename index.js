@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 /**
- * Fetch coduri reducere Temu de pe shopilo.it
- * Homepage: https://shopilo.it/magazin/temu.com
+ * Recupero codici sconto Temu da shopilo.it
+ * Homepage: https://shopilo.it/negozi/temu.com
  */
 
-const SHOPILO_URL = "https://shopilo.it/magazin/temu.com";
+const SHOPILO_URL = "https://shopilo.it/negozi/temu.com";
 const STORE_NAME  = "Temu";
 
 async function fetchCoupons(url = SHOPILO_URL) {
@@ -24,10 +24,10 @@ if (require.main === module) {
     .then(data => {
       if (data.length) {
         console.log(JSON.stringify(data, null, 2));
-        console.log(`\nTotal: ${data.length} coduri gasite`);
+        console.log(`\nTotal: ${data.length} codici trovati`);
       } else {
-        console.log(`Nu s-au gasit coduri. Lista completa: ${SHOPILO_URL}`);
+        console.log(`Nessun codice trovato. Lista completa: ${SHOPILO_URL}`);
       }
     })
-    .catch(err => console.error("Eroare:", err.message));
+    .catch(err => console.error("Errore:", err.message));
 }
